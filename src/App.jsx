@@ -5,7 +5,7 @@ import UserDetail from "./pages/UserDetail";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import ProductDetails from "./pages/ProductDetails";
-import Layout from "./components/Layout"; // Yangi Layout qo‘shildi
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
