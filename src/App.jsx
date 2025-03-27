@@ -4,16 +4,21 @@ import Home from "./pages/Home";
 import UserDetail from "./pages/UserDetail";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
+import ProductDetails from "./pages/ProductDetails";
+import Layout from "./components/Layout"; // Yangi Layout qo‘shildi
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/user/:id" element={<UserDetail />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-      </Routes>
+      <Layout> 
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/user/:id" element={<UserDetail />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 };
